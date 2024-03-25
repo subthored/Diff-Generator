@@ -23,10 +23,6 @@ Options:
 
 DOC;
 
-$params = [
-  'version' => '0.1'
-];
-
 $args = Docopt::handle($doc, array('version'=>'GenDiff 0.1'));
 foreach ($args as $k=>$v)
     echo $k.': '.json_encode($v).PHP_EOL;
