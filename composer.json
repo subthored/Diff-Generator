@@ -1,0 +1,23 @@
+{
+    "name": "hexlet/code",
+    "description": "Second Project in PHP course",
+    "type": "project",
+    "license": "LGPL-3.0-or-later",
+    "bin": [
+        "bin/gendiff"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eugeny Zhikharev",
+            "email": "janiqgames@gmail.com"
+        }
+    ],
+    "require": {
+        "docopt/docopt": "^1.0"
+    }
+}
