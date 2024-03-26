@@ -4,12 +4,15 @@
     "type": "project",
     "license": "LGPL-3.0-or-later",
     "bin": [
-        "bin/gendiff.php"
+        "bin/gendiff"
     ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        }
+        },
+        "files": [
+            "src/genDiff.php"
+        ]
     },
     "authors": [
         {
@@ -18,6 +21,7 @@
         }
     ],
     "require": {
-        "docopt/docopt": "^1.0"
+        "docopt/docopt": "^1.0",
+        "lstrojny/functional-php": "^1.17"
     }
 }
