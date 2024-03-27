@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "files": [
-            "src/genDiff.php"
+            "src/GenDiff.php"
         ]
     },
     "authors": [
