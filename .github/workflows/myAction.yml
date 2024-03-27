@@ -37,3 +37,12 @@ jobs:
 
     - name: Linter
       run: make lint
+
+    - name: Climate coverage
+        uses: paambaati/codeclimate-action@v5.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CODECLIMATETESTCOVERAGE }}
+        with:
+          coverageCommand: make test-coverage
+          coverageLocations: ${{ github.workplace }}/build/logs/clover.xml:clover
+          debug: true
