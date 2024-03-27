@@ -18,7 +18,9 @@ host: hexlet.io
 + timeout: 20
 + verbose: true
 }";
+        $file1 = 'tests/fixtures/file1.json';
+        $file2 = 'tests/fixtures/file2.json';
 
-        $this->assertEquals($expected, genDiff('tests/fixtures/file1.json', 'tests/fixtures/file2.json'));
+        $this->assertEquals($expected, genDiff($file1, $file2));
     }
 }
