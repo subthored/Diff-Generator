@@ -4,8 +4,12 @@ namespace Parser;
 
 use Symfony\Component\Yaml\Yaml;
 
-function parseFile(string $file)
+function parseFile($file)
 {
+    if (!file_exists($file)) {
+        throw new \Exception('No such file!');
+    }
+
     $fileData = (string) file_get_contents($file, true);
     $extension = pathinfo($file, PATHINFO_EXTENSION);
     // var_dump($extension);
