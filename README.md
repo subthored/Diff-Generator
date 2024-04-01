@@ -7,8 +7,11 @@
 ### Codeclimate tests coverage:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4aac02452bc62454dc9c/test_coverage)](https://codeclimate.com/github/subthored/php-project-48/test_coverage)
 
-### Asciinema of launching json files:
+### Asciinema of launching flat json files:
 [![asciicast](https://asciinema.org/a/gyalzw5zonkPHp0V3gKw4lc4o.svg)](https://asciinema.org/a/gyalzw5zonkPHp0V3gKw4lc4o)
 
-### Asciinema of launching yaml files:
+### Asciinema of launching flat yaml files:
 [![asciicast](https://asciinema.org/a/kLZWlZbu0uRzdTlHCZSfRuHMT.svg)](https://asciinema.org/a/kLZWlZbu0uRzdTlHCZSfRuHMT)
+
+### Asciinema of launching tree file:
+[![asciicast](https://asciinema.org/a/ARPugChQi5Muc7fe3p8NPhzRY.svg)](https://asciinema.org/a/ARPugChQi5Muc7fe3p8NPhzRY)
