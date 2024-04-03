@@ -1,10 +1,18 @@
+### Description:
+Gendiff is a difference calculator for .json and .yaml files.
+Can generate report in three format styles. Text, json and stylish.
+
+### Install:
+`git clone https://github.com/subthored/php-project-48.git`
+`cd php-ptoject-48`
+`make install`
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/subthored/php-project-48/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/subthored/php-project-48/actions)
+[![PHP Composer](https://github.com/subthored/php-project-48/actions/workflows/myAction.yml/badge.svg)](https://github.com/subthored/php-project-48/actions/workflows/myAction.yml)
 
-### Codeclimate maintainability:
+### Codeclimate maintainability and tests:
 [![Maintainability](https://api.codeclimate.com/v1/badges/4aac02452bc62454dc9c/maintainability)](https://codeclimate.com/github/subthored/php-project-48/maintainability)
-
-### Codeclimate tests coverage:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4aac02452bc62454dc9c/test_coverage)](https://codeclimate.com/github/subthored/php-project-48/test_coverage)
 
 ### Asciinema of launching flat json files:
