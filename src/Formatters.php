@@ -19,4 +19,6 @@ function format(array $array, string $formatter): string
     if ($formatter === 'json') {
         return renderJson($array);
     }
+
+    return "Invalid format. Supported is: stylish | plain | json .";
 }
