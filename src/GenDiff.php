@@ -4,15 +4,15 @@ namespace src;
 
 use function Functional\sort;
 use function Parser\parseFile;
-use function Render\renderStylish;
+use function format\format;
 
-function genDiff(string $file1, string $file2, string $formatter = 'stylish'): string
+function genDiff(string $file1, string $file2, string $formatter = 'stylish')
 {
     $data1 = parseFile($file1);
     $data2 = parseFile($file2);
     $diffTree = diffTree($data1, $data2);
-    // var_dump($diffTree);
-    return renderStylish($diffTree);
+    // var_dump($formatter);
+    return format($diffTree, $formatter);
 }
 
 function diffTree(object $data1, object $data2): array
