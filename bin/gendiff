@@ -24,7 +24,7 @@ Usage:
 Options:
   -h --help                     Show this screen
   -v --version                  Show version
-  -- format <fmt>               Report format [default: stylish]
+  --format <fmt>               Report format [default: stylish]
 DOC;
 
 $params = ['version' => 'GenDiff 0.1'];
