@@ -13,8 +13,11 @@
 ### Asciinema of launching flat yaml files:
 [![asciicast](https://asciinema.org/a/kLZWlZbu0uRzdTlHCZSfRuHMT.svg)](https://asciinema.org/a/kLZWlZbu0uRzdTlHCZSfRuHMT)
 
-### Asciinema of launching tree file:
+### Asciinema of launching in stylish format:
 [![asciicast](https://asciinema.org/a/ARPugChQi5Muc7fe3p8NPhzRY.svg)](https://asciinema.org/a/ARPugChQi5Muc7fe3p8NPhzRY)
 
-### Asciinema of launchin in plain style:
+### Asciinema of launching in plain format:
 [![asciicast](https://asciinema.org/a/hckonb9CQtZTtr4O7RkzQ7Qid.svg)](https://asciinema.org/a/hckonb9CQtZTtr4O7RkzQ7Qid)
+
+### Asciinema of launghing in json format:
+[![asciicast](https://asciinema.org/a/ZmGBEaTMhEESqN7HMeu0CA10O.svg)](https://asciinema.org/a/ZmGBEaTMhEESqN7HMeu0CA10O)
