@@ -2,9 +2,9 @@
 
 namespace plainRender;
 
-function renderPlain($diffTree, $valuePath)
+function renderPlain(array $diffTree, string $valuePath): string
 {
-    $resultArray = array_map(function ($node) use ($valuePath) {
+    return implode("", array_map(function ($node) use ($valuePath) {
         if ($node['flag'] === 'add') {
             $val2 = makeString($node['val2']);
             return "Property '$valuePath{$node['key']}' was added with value: {$val2}\n";
@@ -20,12 +20,10 @@ function renderPlain($diffTree, $valuePath)
             $path = "$valuePath{$node['key']}.";
             return renderPlain($node['child'], $path);
         }
-    }, $diffTree);
-
-    return implode("", $resultArray);
+    }, $diffTree));
 }
 
-function makeString($value)
+function makeString(mixed $value): string
 {
     if (is_object($value)) {
         // var_dump($value);

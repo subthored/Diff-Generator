@@ -4,7 +4,7 @@ namespace Parser;
 
 use Symfony\Component\Yaml\Yaml;
 
-function parseFile($file)
+function parseFile(string $file): object
 {
     if (!file_exists($file)) {
         throw new \Exception('No such file!');

@@ -6,7 +6,7 @@ use function Functional\sort;
 use function Parser\parseFile;
 use function format\format;
 
-function genDiff(string $file1, string $file2, string $formatter = 'stylish')
+function genDiff(string $file1, string $file2, string $formatter = 'stylish'): string
 {
     $data1 = parseFile($file1);
     $data2 = parseFile($file2);
@@ -22,7 +22,7 @@ function diffTree(object $data1, object $data2): array
     $mergedKeys = array_unique(array_merge(array_keys($fileData1), array_keys($fileData2)));
     $sortedKeys = sort($mergedKeys, fn($left, $right) => strcmp($left, $right));
 
-    $diffArray = array_map(function ($key) use ($fileData1, $fileData2) {
+    return array_map(function ($key) use ($fileData1, $fileData2) {
         if (!array_key_exists($key, $fileData1)) {
             return ['key' => $key, 'val2' => $fileData2[$key], 'flag' => 'add'];
         }
@@ -38,6 +38,4 @@ function diffTree(object $data1, object $data2): array
         }
         return ['key' => $key, 'val1' => $fileData1[$key], 'val2' => $fileData2[$key], 'flag' => 'mod'];
     }, $sortedKeys);
-
-    return $diffArray;
 }

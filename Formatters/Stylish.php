@@ -4,7 +4,7 @@ namespace stylishRender;
 
 const INDENT = 4;
 
-function renderStylish($diffTree, int $level = 0)
+function renderStylish(array $diffTree, int $level = 0): string
 {
     $indent = indentAmount($level, INDENT);
     $resultArray = array_map(function ($node) use ($level, $indent) {
@@ -32,7 +32,7 @@ function renderStylish($diffTree, int $level = 0)
     return "{\n" . implode("", $resultArray) . "{$indent}}";
 }
 
-function stringConvert($value, $level)
+function stringConvert(mixed $value, int $level): string
 {
     if (is_bool($value)) {
         return $value === true ? 'true' : 'false';
@@ -55,7 +55,7 @@ function stringConvert($value, $level)
     return "{" . "\n" . implode("", $stringifyedArray) . $indent . "}";
 }
 
-function indentAmount($level, $indentAmount)
+function indentAmount(int $level, int $indentAmount): string
 {
     return str_repeat(" ", $level * $indentAmount);
 }
