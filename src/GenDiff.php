@@ -11,7 +11,6 @@ function genDiff(string $file1, string $file2, string $formatter = 'stylish'): s
     $data1 = parseFile($file1);
     $data2 = parseFile($file2);
     $diffTree = diffTree($data1, $data2);
-    // var_dump($formatter);
     return format($diffTree, $formatter);
 }
 

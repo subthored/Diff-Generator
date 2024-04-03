@@ -14,7 +14,6 @@ function renderPlain(array $diffTree, string $valuePath): string
         } elseif ($node['flag'] === 'mod') {
             $val1 = makeString($node['val1']);
             $val2 = makeString($node['val2']);
-            // var_dump($val1);
             return "Property '$valuePath{$node['key']}' was updated. From {$val1} to {$val2}\n";
         } elseif ($node['flag'] === 'parent') {
             $path = "$valuePath{$node['key']}.";
@@ -26,7 +25,6 @@ function renderPlain(array $diffTree, string $valuePath): string
 function makeString(mixed $value): string
 {
     if (is_object($value)) {
-        // var_dump($value);
         return "[complex value]";
     }
     if (is_bool($value)) {

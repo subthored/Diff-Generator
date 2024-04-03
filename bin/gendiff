@@ -32,9 +32,7 @@ $params = ['version' => 'GenDiff 0.1'];
 $args = Docopt::handle($doc, $params);
 
 $firstFile = $args['<firstFile>'];
-// var_dump($firstFile);
 $secondFile = $args['<secondFile>'];
-// var_dump($secondFile);
 $format = $args['--format'];
 
 print_r(genDiff($firstFile, $secondFile, $format));
