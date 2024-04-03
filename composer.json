@@ -12,7 +12,8 @@
             "src/Parser.php",
             "src/Formatters.php",
             "Formatters/Stylish.php",
-            "Formatters/Plain.php"
+            "Formatters/Plain.php",
+            "Formatters/Json.php"
         ]
     },
     "authors": [
