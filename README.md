@@ -15,3 +15,6 @@
 
 ### Asciinema of launching tree file:
 [![asciicast](https://asciinema.org/a/ARPugChQi5Muc7fe3p8NPhzRY.svg)](https://asciinema.org/a/ARPugChQi5Muc7fe3p8NPhzRY)
+
+### Asciinema of launchin in plain style:
+[![asciicast](https://asciinema.org/a/hckonb9CQtZTtr4O7RkzQ7Qid.svg)](https://asciinema.org/a/hckonb9CQtZTtr4O7RkzQ7Qid)
