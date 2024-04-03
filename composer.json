@@ -10,7 +10,9 @@
         "files": [
             "src/GenDiff.php",
             "src/Parser.php",
-            "Formatter/Stylish.php"
+            "src/Formatters.php",
+            "Formatters/Stylish.php",
+            "Formatters/Plain.php"
         ]
     },
     "authors": [
