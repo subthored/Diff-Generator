@@ -1,6 +1,6 @@
 <?php
 
-namespace Render;
+namespace stylishRender;
 
 const INDENT = 4;
 
