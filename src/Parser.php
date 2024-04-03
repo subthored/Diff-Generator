@@ -12,6 +12,7 @@ function parseFile(string $file): object
 
     $fileData = (string) file_get_contents($file, true);
     $extension = pathinfo($file, PATHINFO_EXTENSION);
+    $returnData = [];
     // var_dump($extension);
 
     if ($extension === 'json') {
