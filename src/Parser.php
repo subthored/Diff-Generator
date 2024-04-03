@@ -15,9 +15,11 @@ function parseFile(string $file): object
     // var_dump($extension);
 
     if ($extension === 'json') {
-        return json_decode($fileData);
+        $returnData = json_decode($fileData);
     }
     if ($extension === 'yml' || $extension === 'yaml') {
-        return Yaml::parse($fileData, Yaml::PARSE_OBJECT_FOR_MAP);
+        $returnData = Yaml::parse($fileData, Yaml::PARSE_OBJECT_FOR_MAP);
     }
+
+    return $returnData;
 }
